@@ -43,6 +43,10 @@ body{
 .center{
     text-align: center;
 }
+@font-face{
+    font-family: 'Monotype Corsiva';
+    src: url('../fonts/Monotype\ Corsiva.ttf');
+}
 /* ----------------------------------------------------------------------------- */
 header{
     background-color: #c9c5d4;
