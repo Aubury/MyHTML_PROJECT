@@ -1,0 +1,852 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #dad7e3;
+    width: 99vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+
+}
+.width{
+   
+    width: 32%;
+}
+.marg-3{
+    margin-left: -3px;
+}
+.marg0{
+    margin-top: 0;
+    
+}
+.pad5{
+    padding-left: 5px;
+}
+.marg10{
+    margin-left: 10px;
+}
+.marg15{
+    margin-left: 12px;
+}
+.hide{
+    display: none;
+}
+.center{
+    text-align: center;
+}
+/* ----------------------------------------------------------------------------- */
+header{
+    background-color: #c9c5d4;
+    border-bottom: 3px solid rgb(94, 93, 93);
+    display: flex;
+    height: 15%;
+    padding: 3em 2em 0 4em;
+    width: 99,96%;
+}
+
+.logo_text{
+
+    font-family: 'Monotype Corsiva';
+    margin: 10px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+
+}
+.space{
+    width: 70%;
+    margin-top: 17px;
+}
+.space_tel{
+  
+    margin-left: 15px;
+
+}
+.name{
+    font-family: 'Monotype Corsiva';
+    font-size: 7em;
+    margin: 0 auto -32px 1%;
+    
+
+}
+.arCenter{
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -8%;
+   
+}
+
+.logo2{
+    height: 20em;
+    margin-right: 5%;
+}
+/* ------------------------------------------------------------------------------------ */
+main{
+    width: 83.3%;
+    margin: 1em auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
+    justify-content: space-between;
+}
+.imgHouses{
+  
+   width: 45%
+}
+.imgHouses img:first-of-type{
+
+    filter: none !important;
+    
+
+}
+.imgHouses img{
+     
+   width: 90%;
+   height: auto;
+   border: 15px solid rgb(54, 54, 54);
+   border-radius: 5%;
+   filter: grayscale(100%) !important;
+}
+.top img{
+    width: 99%;
+}
+.planHouses{
+
+    font-size: 2em;
+    width: 40%;
+    margin-left: 2em;
+    padding-top: 1em;
+}
+.buttons{
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.1em;
+}
+.topButton{
+   
+    background-image: url('../img/button-up.png');
+    background-position: bottom;
+    margin: 0.9em auto 0 1em;
+    width: 85%;
+    height: 4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: .5em;
+
+}
+.infButton{
+
+    background-image: url('../img/button-info.png');
+    background-position: 5%;
+    color: white;
+    width: 8%;
+    order: 2;
+
+}
+.downButton{
+    background-image: url('../img/button-down.png');
+    margin: 0 auto 0 1em;
+    text-align: center;
+    width: 85%;
+    height: 3.5em;
+    padding-top: .2em;
+    
+}
+.topButton:hover,
+.downButton:hover, 
+.infButton:hover{
+    cursor: pointer;
+}
+.verticalText{
+  writing-mode: vertical-lr;
+   margin-top: 12em;
+}
+.plan{
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    width: 55em;
+    top: 50%;
+    left: 50%;
+    padding: 2em 2em 2em 0;
+    border-radius: 2%;
+    
+}
+.floors{
+    display: flex;
+    padding: 2em;
+}
+.floors p{
+  
+    width: 10%;
+    padding: 7%;
+    font-size: 2em;
+    margin-right: 1.5em;
+}
+.floors img{
+    width: 80%;
+    height: auto;
+}
+.vertical{
+
+    word-wrap: break-word;
+}
+/* -------------------------------------------------------------- */
+footer{
+  border-top: 3px solid rgb(94, 93, 93);
+  background-color: #9d9ba3;
+  height: 15em;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+  padding-left: 4em;
+  padding-right: 4em;
+
+}
+footer p{
+    font-size: 2em;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+/* ============================================================= */
+@media only screen and (max-width: 1500px){
+    .name{
+       font-size: 6em;
+       margin: 0 auto -30px .5%;
+    }
+    .logo2{
+        height: 17em;
+    }
+    header{
+       
+        height: 15%;
+        padding: 3em 2em 0 2.5em;
+    }
+     .logo_text{
+        font-size: 1.2em;
+    }
+    .planHouses{
+        font-size: 1.8em;
+    }
+    .buttons{
+        font-size: 1em;
+    }
+    footer p{
+        font-size: 1.8em;
+    }
+    a{
+       
+        font-size: 1.8em;
+    }
+    .plan{
+        
+        width: 45em;
+        top:45%;
+        left: 47%;
+       
+    }
+    .plan img{
+        width: 70%;
+        height: 35%;
+    }
+    .verticalText{
+        margin-top: 10em;
+    }
+    
+}
+
+/* ================================================================= */
+
+@media only screen and (max-width: 1300px){
+
+    /* .name{
+      font-size: 5em !important;
+       margin: 0 auto -19px 1%;
+    } */
+    header{
+        
+        height: 10%;
+        padding: 2em 1em 0 3em;
+    }
+    .logo2{
+        height: 15em;
+    }
+    .buttons{
+        font-size: .8em;
+    }
+    footer p,
+    footer a{
+        font-size: 1.5em;
+    }
+    footer img{
+        width: 2em;
+    }
+    .plan{
+        
+        width: 40em;
+        top: 50% !important;
+    }
+    .plan img{
+        width: 65%;
+        height: 35%;
+    }
+    .width{
+        width: 50%;
+    }
+   .downButton{
+    height: 5em;
+   }
+}
+/* ========================================================================= */
+@media only screen and (max-width: 1200px){
+
+    header{
+        
+        padding: 1em 1em 0 1em;
+    }
+    .name{
+        font-size: 4.5em !important;
+    }
+
+     .planHouses{
+       
+        font-size: 1.5em;
+        margin-left: 1.5em;   
+    }
+    
+}
+/* ========================================================================= */
+/* @media only screen and (max-width: 1100px){
+ 
+    
+    .name{
+        font-size: 4em !important;
+        margin: 0 auto -19px auto;
+    }
+   
+} */
+
+/* =========================iPad Pro======================================== */
+@media only screen and (max-width: 1400px) {
+ .name{
+     font-size: 5em;
+     margin-bottom: -20px;
+ }
+ .plan{
+     width: 40em;
+     top:43%;
+ }
+}
+/* ========================iPad Pro============================================= */
+@media only screen and (max-width: 1050px) {
+
+    .name{
+        font-size: 3.5em !important;
+        margin-bottom: -1.6%;
+    }
+    .logo2{
+        height: 10em;
+    }
+    .logo_text{
+        font-size: 1.1em;
+        margin: 5px;
+        line-height: 1.2em;
+    }
+    .logo{
+        width: 6em;
+        height: 7em;
+    }
+    main{
+        flex-direction: column !important;
+
+    }
+    .width{
+        width: 50%;
+    }
+    .infButton{
+      margin-right: .5em;
+      margin-left: auto;
+
+    }
+    /* .top img{
+        width: 104%;
+    } */
+    .verticalText{
+        
+         margin-top: 13em;
+    }
+   
+    .planHouses{
+       
+        order: -1;
+        width: 99%;
+        font-size: 1.5em;
+         margin-left: 0;
+       
+    }
+    .imgHouses{
+        width: 99.96%;
+
+    }
+    
+    .buttons{
+        font-size: 1.1em;
+    }
+   .plan{
+        
+       width: 74%;
+        top: 56% !important;
+        left: 9%;
+    }
+    .plan img{
+        width: 80%;
+        height: 40%;
+    }
+}
+/* ===================iPad============================== */
+@media only screen and (max-width: 1050px) and (orientation: landscape){
+
+
+    .plan{
+       
+        top:100% !important;
+    }
+}
+/* ====================iPad============================ */
+@media only screen and (max-width: 800px){
+    .name{
+        font-size: 3em !important;
+     
+    }
+    .top img{
+        width: 99%;
+    }
+    .infButton{
+      
+        margin-right: .2em;
+        
+      }
+      .verticalText{
+          margin-top: 10em;
+      }
+     .plan{
+         top: 88%;
+       
+     }
+     .plan img{
+         width: 80%;
+         height: 40%;
+     }
+}
+/* ====================Pixel 2XL=================================== */
+@media only screen and (max-width: 825px) and (orientation: landscape){
+   .name{
+       font-size: 3rem
+   }
+   .logo2{
+       height: 10em;
+   }
+    .plan{
+       
+        top:205% !important;
+        font-size: .7em;
+        padding: .5em .5em .5em 0;
+    }
+    .plan img{
+        width: 80% !important;
+        
+    }
+    .top img{
+        width: 99%;
+    }
+    
+}
+/* ========================Pixel 2XL====================================*/
+@media only screen and (max-width: 415px) and (max-height: 825px){
+  
+    .plan{
+        top:70.5% !important;
+    }
+
+}
+/* ========================Pixel 2====================================*/
+@media only screen and (max-width: 415px) and (max-height: 735px){
+  
+    .plan{
+        top:79% !important;
+    }
+
+}
+/* ========================Pixel 2====================================*/
+@media only screen and (max-width: 735px) and (max-height: 415px){
+  
+    .plan{
+        
+        top: 213% !important;
+    }
+
+}
+
+/* =======================iPahe X============================ */
+@media only screen and (max-width: 815px) and (orientation: landscape){
+
+    .name{
+        font-size: 3em;
+    }
+    .top img{
+        width: 99%;
+    }
+    .infButton{
+        margin-right: .2em;
+    }
+    .plan{
+        top: 216% !important;
+      
+    }
+    .plan img{
+        width: 80%;
+        height: 40%;
+    }
+    .logo2{
+
+        height: 8em;
+    }
+
+}
+
+/* =======================iPone X================================ */
+@media only screen and (max-width: 375px) and (max-height: 815px){
+    .plan{
+       
+        top: 76% !important;
+       
+    }
+}
+/* ============================================================ */
+@media only screen and (max-width: 800px) and (orientation: landscape){
+
+    .name{
+        font-size: 4em;
+    }
+    .top img{
+        width: 99%;
+    }
+    .infButton{
+        margin-right: .2em;
+    }
+    .plan{
+        top: 233% !important;
+      
+    }
+    .plan img{
+        width: 80%;
+        height: 40%;
+    }
+
+}
+
+/* =====================iPone 6/7/8 Plus============================== */
+@media only screen and (max-width: 740px) and (max-height: 415px){
+
+    .name{
+        font-size: 2.5em;
+     
+    }
+    .plan{
+        top: 211% !important;
+    }
+    .logo2{
+        height: 10em;
+         
+    }
+}
+/* ========================iPone 6/7/8 Plus================================ */
+@media only screen and (max-width: 420px){
+    .plan{
+        
+        top: 79%;
+      
+    }
+}
+
+/* ===================================================== */
+@media only screen and (max-width: 700px){
+    .name{
+        font-size: 2.6em !important;
+     
+    }
+    .logo_text{
+        font-size: .7em;
+        margin: 3px;
+        line-height: 1.5em;;
+    }
+    
+    header{
+        height: 15%;
+        width: 99.96%;
+        padding: .7em  .7em 0 1em;
+    }
+    .buttons{
+        font-size: .9em;
+    }
+    .plan{
+        top: 78%;
+        left: 8.5%;
+        font-size: .7em;
+        padding: .5em .5em .5em 0;
+    }
+   .plan img{
+        width: 75%;
+    } 
+    footer img{
+        width: 2em;
+    }
+    footer{
+        
+        height: 10em;
+        padding-left: 2em;
+        padding-right: 2em;
+      
+    }
+    footer p,
+    footer a{
+         
+        font-size: 1em;
+    }
+  
+} 
+/* =========================iPone 6/7/8=================================== */
+@media only screen and (max-width: 700px) and (orientation: landscape){
+   
+    .name{
+        font-size: 2.5em;
+    }
+    .plan{
+        top: 245% !important;
+        left: 9%;
+    }
+}
+/* =======================iPone 6/7/8================================ */
+@media only screen and (max-width: 380px) and (max-height: 670px){
+    .plan{
+       
+        top: 93% !important;
+        font-size: .5em;
+        
+      
+    }
+ 
+}
+/* ========================iPhone S5=============================== */
+@media only screen and (max-width: 360px) and (max-height: 640px){
+ .name{
+     font-size: 1.3em !important;
+ }
+ .plan{
+     top:102% !important;
+ }
+
+}
+/* ========================iPhone S5=============================== */
+@media only screen and (max-width: 640px) and (max-height:360px){
+    .name{
+        font-size: 2.2em !important;
+    }
+    .logo2{
+        height: 8em;
+    }
+    .plan{
+        top:248% !important;
+    }
+   
+   }
+
+
+/* ====================iPhone 5/SE============================= */
+@media only screen and (max-width: 570px) and (orientation: landscape){
+   
+    .name{
+        font-size: 2.2em;
+    }
+    .plan{
+        top: 298% !important;
+        
+    }
+    .logo2{
+        height: 8em;
+    }
+}
+/* ========================iPhone 5/SE=============================== */
+@media only screen and (max-width: 320px) and (max-height:570px){
+
+    .name{
+        font-size: 1.2em;
+        margin-bottom: -1.7%;
+    }
+    .logo2{
+        height: 3.5em;
+    }
+   
+    .logo{
+        width: 4em;
+        height: 3em;
+    }
+    .logo_text{
+        font-size: .6em;
+    }
+    .imgHouses img{
+     
+        border-width: 5px ;
+    }
+    .buttons{
+        font-size: .5em;
+    }
+    .plan{
+        top: 118% !important;
+      
+    }
+    .plan img{
+        width: 80%;
+    } 
+}
+/* ================================================= */
+@media only screen and (max-width: 600px){
+
+    .name{
+        font-size: 2em !important;
+    }
+    .logo{
+        height: 30%;
+    }
+    .logo2{
+        height: 6em;
+    }
+    .imgHouses{
+        order: -1;
+    }
+}
+/* ================================================ */
+@media only screen and (max-width: 500px){
+
+    .name{
+        font-size: 1.4em;
+        margin-bottom: -1.7%;
+    }
+    /* .logo2{
+        height: 5em;
+    }
+    */
+    .logo{
+        width: 5em;
+        height: 4em;
+    }
+    .logo2{
+        height: 5.2em;
+    }
+    .logo_text{
+        line-height: 1em;
+    }
+    .width{
+        width: 60%;
+    }
+  
+    .planHouses{
+        
+        width: 99.96%;
+        font-size: 1em;
+     
+    }
+    .imgHouses{
+        width: 99.96%;
+
+    }
+    .buttons{
+        font-size: .6em;
+    }
+    .plan{
+        top: 70%;
+      
+
+    }
+      .imgHouses img{
+     
+        border-width: 7px ;
+    }
+ 
+}
+/* ======================================================= */
+@media only screen and (max-width: 320px){
+    .name{
+        font-size: 1.3em !important;
+        margin-bottom: -1.7%;
+    }
+    /* .imgHouses{
+        order: -1;
+    } */
+    .logo2{
+        height: 3em;
+    }
+   
+    .logo{
+        width: 4em;
+        height: 3em;
+    }
+    .logo_text{
+        font-size: .6em;
+    }
+    .imgHouses img{
+     
+        border-width: 5px ;
+    }
+    .buttons{
+        font-size: .5em;
+    }
+    .plan{
+        top: 118% !important;
+      
+    }
+    .plan img{
+        width: 80%;
+    } 
+    .top img{
+        width: 99%;
+    }
+}
+   
+   
+/* ====================================================
+@media only screen and (max-height: 850px){
+    .plan{
+        top: 70.5%;
+        left: 9%;
+      
+    }
+} */
+/* ======================================================= */
+
+@media only screen and (max-width: 400px){
+    .name{
+        font-size: 1.5em !important;
+    }
+    .logo2{
+        height: 4em;
+    }
+}
+
+
+
