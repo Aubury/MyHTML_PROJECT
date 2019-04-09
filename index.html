@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="col">
     <header class="col">
-       <section class="row width">
-            <img src="img/logo.png" alt="logo" class="logo">
-            <p class="logo_text"><span class="marg0">МЫ ПОМОЖЕМ ВАМ</span><br>
-                 <span class="marg10">ПОСТРОИТЬ ДОМ</span><br>
-                 <span class="marg15">ВАШЕЙ МЕЧТЫ</span><br>
-                 <span class="marg10">ТЕЛ.: 777-77-77</span><br>
-                 <span class="marg-3">ФАКС: 888-88-88</span></p>
-       </section>
-       <section class="arCenter row">
-            <p class="name">Архитектурный центр</p>
-            <img src="img/img_header.png" alt="logo2" class="logo2">
-        </section>
+        <div class="all_width">
+            <section class="row width ">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                    <div class="logo_text">
+                      <p><span class="marg0">МЫ ПОМОЖЕМ ВАМ</span><br>
+                        <span class="marg10">ПОСТРОИТЬ ДОМ</span><br>
+                        <span class="marg15">ВАШЕЙ МЕЧТЫ</span><br>
+                      </p>
+                        <!-- <span class="marg10">ТЕЛ.: 777-77-77</span><br>
+                        <span class="marg-3">ФАКС: 888-88-88</span></p> -->
+                       <p><a href="" class="marg10">Контакты</a><br>
+                        <a href="" class="marg-3">О нас</a>
+                    </p>
+                    </div>    
+            </section>
+            <section class="arCenter row">
+                    <p class="name">Архитектурный центр</p>
+                    <img src="img/img_header.png" alt="logo2" class="logo2">
+                </section>
+        </div>
     </header>
 
-    <main class="row">
+    <main class="row all_width">
      <section class="imgHouses">
         
-        <div class="topButton buttons">Прокрутить объекты вверх</div>
+        <!-- <div class="topButton buttons">Прокрутить объекты вверх</div> -->
+        <div class="topButton buttons"></div>
+        
         <div class="top row">
-            <div class="infButton buttons"><span class="verticalText">Детально</span></div>
-            <div id='1'><img src="img/progect_1.jpg" alt="progect_1">
-            <div class="plan hide">
-                   <div class="floors">
+           <div id='1' class="left_top"><img src="img/progect_1.jpg" alt="progect_1">
+              <div class="plan hide">
+                   <div class="floors row">
                     <p class="vertical">1 этаж</p>
                     <img src="img/plan_1.png" alt="">
                 </div>
-                <div class="floors">
+                <div class="floors row">
                     <p class="vertical">2 этаж</p>
                     <img src="img/plan_2.png" alt="">
                 </div>
             </div>
-       </div>
-         
-         
+           </div>
+            <div class="infButton buttons">
+                <!-- <span class="verticalText">План</span> -->
+            </div>
         </div> 
         
         <div id="2">
@@ -53,7 +64,9 @@
             <img src="img/progect_3.jpg" alt="progect_3">
         </div>
 
-        <div class="downButton buttons">Прокрутить объекты в низ</div>
+        <!-- <div class="downButton buttons">Прокрутить объекты в низ</div> -->
+        <div class="downButton buttons"></div>
+
     </section>
         
     <section class="planHouses">
@@ -73,20 +86,21 @@
 
     </main>
     <footer>
-        <div class="col">
-            <a href="">Главная</a>
-            <a href="">О нас</a>
-            <a href="">Контакты</a>
-        </div>
-        <div class="col">
-            <p class="center">Мы в соцсетях:</p>
-            <p class="row marg0 ">
-              <a href="" class="pad5"><img src="img/Social Icons by Dreamstale (13).png" alt=""></a> 
-              <a href="" class="pad5"><img src="img/Social Icons by Dreamstale (6).png" alt=""></a>  
-              <a href="" class="pad5"><img src="img/Layer 8.png" alt=""></a> 
-            </p>
-        </div>
-
+        <!-- <div class="all_width row justify"> -->
+            <div class="col">
+                <a href="">Главная</a>
+                <a href="">О нас</a>
+                <a href="">Контакты</a>
+            </div>
+            <div class="col">
+                <p class="center">Мы в соцсетях:</p>
+                <p class="row marg0 ">
+                <a href="" class="pad5"><img src="img/Social Icons by Dreamstale (13).png" alt=""></a> 
+                <a href="" class="pad5"><img src="img/Social Icons by Dreamstale (6).png" alt=""></a>  
+                <a href="" class="pad5"><img src="img/Layer 8.png" alt=""></a> 
+                </p>
+            </div>
+        <!-- </div> -->
     </footer>
     <script src="app/script.js"></script>
 </body>

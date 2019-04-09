@@ -3,10 +3,7 @@
 }
 body{
     background-color: #dad7e3;
-    width: 99vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+
 }
 .col{
     display: flex;
@@ -19,10 +16,10 @@ body{
 }
 .width{
    
-    width: 32%;
+    width: 50%;
 }
 .marg-3{
-    margin-left: -3px;
+    margin-left: -8px;
 }
 .marg0{
     margin-top: 0;
@@ -43,6 +40,11 @@ body{
 .center{
     text-align: center;
 }
+.all_width{
+    max-width: 80%;
+    margin: 0 auto; 
+}
+
 @font-face{
     font-family: 'MonotypeCorsiva';
     src: url('../fonts/MonotypeCorsiva.ttf');
@@ -50,21 +52,19 @@ body{
 /* ----------------------------------------------------------------------------- */
 header{
     background-color: #c9c5d4;
-    border-bottom: 3px solid rgb(94, 93, 93);
-    display: flex;
+    border-bottom: 1px solid transparent;
     height: 15%;
-    padding: 3em 2em 0 4em;
-    width: 99,96%;
+    padding-top: 3em; 
+    width: 100%;
+}
+header::after{
+    content: "";
+    background-image: linear-gradient(60deg,rgb(184, 181, 181),rgb(94, 93, 93));
+     height: 4px;
+     
 }
 
-.logo_text{
 
-    font-family: 'MonotypeCorsiva';
-    margin: 10px;
-    font-size: 1.5em;
-    line-height: 1.3em;
-
-}
 .space{
     width: 70%;
     margin-top: 17px;
@@ -75,26 +75,45 @@ header{
 
 }
 .name{
+    width: 70%;
     font-family: 'MonotypeCorsiva';
-    font-size: 7em;
-    margin: 0 auto -32px 1%;
+    font-size: 7rem;
+    white-space: pre;
+    margin: 0 auto -29px 0;
+    z-index: 1;
     
 
 }
 .arCenter{
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: -8%;
+    margin-top: -10%;
    
 }
-
+.logo{
+    width: 11em;
+    height: 12em;
+}
 .logo2{
+    width: 30%;
     height: 20em;
-    margin-right: 5%;
+
+}
+.logo_text{
+
+    font-family: 'MonotypeCorsiva';
+    margin: 10px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    justify-content: space-between;
+
+}
+.logo_text p:last-of-type{
+    margin-top: 1em;
 }
 /* ------------------------------------------------------------------------------------ */
 main{
-    width: 90%;
+    
     margin: 1em auto;
     font-family: 'Noto Sans', sans-serif;
     font-style: italic;
@@ -109,26 +128,38 @@ main{
      
    width: 90%;
    height: auto;
-   border: 15px solid rgb(54, 54, 54);
+   border: 10px solid rgb(54, 54, 54);
    border-radius: 5%;
    filter: grayscale(100%);
 }
+.top{
+    width: 100%;
+    justify-content: space-between;
+}
+
 .top img{
-    width: 98%;
+    width: 100%;
     filter: none !important;
 }
 .planHouses{
 
     font-size: 2em;
-    width: 40%;
+    width: 50%;
     margin-left: 2em;
     padding-top: 1em;
+   
+}
+.planHouses p{
+     /* text-align: justify; */
+     /* text-align-last: justify;  */
+     white-space: normal;
+     margin-top: 1em;
 }
 .buttons{
     background-size: contain;
     background-repeat: no-repeat;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 .topButton{
    
@@ -148,18 +179,18 @@ main{
     background-image: url('../img/button-info.png');
     background-position: 5%;
     color: white;
-    width: 8%;
-    order: 2;
-    /* margin-left:.1em; */
-    /* margin-left: auto;  */
-
+    width: 9%;
+}
+.left_top{
+    
+    width: 90%;
 }
 .downButton{
     background-image: url('../img/button-down.png');
     margin: 0 auto 0 1em;
     text-align: center;
     width: 85%;
-    height: 3.5em;
+    height: 4em;
     padding-top: .2em;
     
 }
@@ -170,21 +201,23 @@ main{
 }
 .verticalText{
   writing-mode: vertical-lr;
-   margin-top: 12em;
+   margin-top: 11em;
+   word-wrap: break-word;
 }
 .plan{
     background-color: white;
     border: 2px solid black;
     position: absolute;
-    width: 55em;
+    z-index: 100;
+    width: 45%;
     top: 50%;
     left: 50%;
-    padding: 2em 2em 2em 0;
+    padding: .5em .5em .5em 0;
     border-radius: 2%;
     
 }
 .floors{
-    display: flex;
+   
     padding: 2em;
 }
 .floors p{
@@ -207,15 +240,17 @@ footer{
   border-top: 3px solid rgb(94, 93, 93);
   background-color: #9d9ba3;
   height: 15em;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   font-family: 'Noto Sans', sans-serif;
   font-style: italic;
-  padding-left: 4em;
-  padding-right: 4em;
+   display: flex;
+   justify-content: space-between;
+  align-items: center;
+  padding-left: 12em;
+  padding-right: 12em; 
+  line-height: 2.5em;
 
 }
+
 footer p{
     font-size: 2em;
     
@@ -225,19 +260,23 @@ a{
     color: black;
     font-size: 2em;
 }
+
 /* ============================================================= */
 @media only screen and (max-width: 1500px){
     .name{
-       font-size: 6em;
-       margin: 0 auto -30px .5%;
+       font-size: 5.5em;
+       margin-bottom: -22px; 
     }
+    /* main{
+        width: 90%;
+    } */
     .logo2{
-        height: 17em;
+        height: 15em;
+        
     }
-    header{
-       
-        height: 15%;
-        padding: 1em 1em 0 1.5em;
+    .logo{
+        width: 10em;
+        height: 10em;
     }
      .logo_text{
         font-size: 1.2em;
@@ -256,8 +295,7 @@ a{
         font-size: 1.8em;
     }
     .plan{
-        
-        width: 45em;
+    
         top:45%;
         left: 47%;
        
@@ -266,10 +304,19 @@ a{
         width: 70%;
         height: 35%;
     }
-    .verticalText{
-        margin-top: 10em;
-    }
     
+}
+/* =========================iPad Pro======================================== */
+@media only screen and (max-width: 1400px)  and (orientation: landscape){
+ .name{
+     font-size: 5em;
+     margin-bottom: -20px;
+ }
+ .plan{
+     width: 43%;
+     top:40%;
+     
+ }
 }
 
 /* ================================================================= */
@@ -283,7 +330,7 @@ a{
     header{
         
         height: 10%;
-        padding: 2em 1em 0 3em;
+       
     }
     .logo2{
         height: 15em;
@@ -293,14 +340,14 @@ a{
     }
     footer p,
     footer a{
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
     footer img{
         width: 2em;
     }
     .plan{
         
-        width: 40em;
+      
         top: 50% !important;
     }
     .plan img{
@@ -315,12 +362,8 @@ a{
    }
 }
 /* ========================================================================= */
-/* @media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px){
 
-    header{
-        
-        padding: 1em 1em 0 1em;
-    }
     .name{
         font-size: 4.5em !important;
     }
@@ -330,35 +373,22 @@ a{
         font-size: 1.5em;
         margin-left: 1.5em;   
     }
-    
-} */
-/* ========================================================================= */
-/* @media only screen and (max-width: 1100px){
- 
-    
-    .name{
-        font-size: 4em !important;
-        margin: 0 auto -19px auto;
+    .planHouses p:last-child{
+        display: none;
     }
-   
-} */
-
-/* =========================iPad Pro======================================== */
-@media only screen and (max-width: 1400px)  and (orientation: landscape){
- .name{
-     font-size: 5em;
-     margin-bottom: -20px;
- }
- .plan{
-     width: 40em;
-     top:43%;
- }
-}
+    footer{
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+    .all_width{
+        max-width: 90% !important;
+    }
+} 
 /* ========================iPad Pro============================================= */
 @media only screen and (max-width: 1050px) {
 
     .name{
-        font-size: 3.5em !important;
+        font-size: 4em !important;
         margin-bottom: -1.6%;
     }
     .logo2{
@@ -371,28 +401,12 @@ a{
     }
     .logo{
         width: 6em;
-        height: 7em;
+        height: 6em;
     }
     main{
         flex-direction: column !important;
 
     }
-    .width{
-        width: 50%;
-    }
-    .infButton{
-      margin-right: .3em;
-      margin-left: auto;
-
-    }
-    .top img{
-        width: 112% !important;
-    }
-    .verticalText{
-        
-         margin-top: 10em;
-    }
-   
     .planHouses{
        
         order: -1;
@@ -401,9 +415,7 @@ a{
          margin-left: 0;
        
     }
-    .planHouses p:last-child{
-        display: none;
-    }
+    
     .imgHouses{
         width: 99.96%;
 
@@ -412,218 +424,149 @@ a{
     .buttons{
         font-size: 1.5em;
     }
-   .plan{
-        
-       width: 74%;
-        top: 56% !important;
-        left: 9%;
+    .plan{
+        width: 72%;
+        left: 10%;
+        top: 38% !important;
     }
     .plan img{
-        width: 80%;
+        width: 80% !important;
         height: 40%;
     }
+   
 } 
-/* ===================iPad============================== */
-/* @media only screen and (max-width: 1050px) and (orientation: landscape){
-
+/* =================================================================== */
+@media only screen and (max-width: 1050px) and (orientation: landscape){
 
     .plan{
-       
-        top:100% !important;
+        top:73% !important;
     }
-} */
-/* ====================iPad============================ */
-@media only screen and (max-width: 800px){
-    .name{
-        font-size: 2.7em !important;
-     
-    }
-    .infButton{
-      
-        margin-right: .2em;
-    }
-    .logo2{
-         
-    height: 10em;
-      }
-      .top img{
-          width: 99% !important;
-      }
-      .verticalText{
-          margin-top: 10em;
-      }
-     .plan{
-         top: 88%;
-       
-     }
-     .plan img{
-         width: 80%;
-         height: 40%;
-     }
-     .buttons{
-         font-size: 1.2em;
-     }
+   
 }
 /* ====================Pixel 2XL=================================== */
-@media only screen and (max-width: 825px) and (orientation: landscape){
+@media only screen and (max-width: 830px) and (orientation: landscape){
    .name{
-       font-size: 3rem
+       font-size: 3.5em !important;
    }
    .logo2{
        height: 10em;
    }
-    .plan{
-       
-        top:205% !important;
-        font-size: .7em;
-        padding: .5em .5em .5em 0;
-    }
+   
     .plan img{
         width: 80% !important;
-        
+
     }
-    .top img{
-        width: 99%;
+    .plan{
+        top: 148% !important;
     }
-    
+    header a{
+        font-size: 1.5em;
+
+    }
+    .logo_text p:last-of-type {
+        margin-top: .8em;
+    }
+    .logo_text {
+        font-size: 1em;
+        margin: 0 3px;
+        line-height: 1em;
+    }
+    header::after{
+       
+         height: 2.5px;
+         
+    }
 }
-/* ========================Pixel 2XL====================================*/
-/* @media only screen and (max-width: 415px) and (max-height: 825px){
-  
-    .plan{
-        top:70.5% !important;
-    }
 
-} */
-/* ========================Pixel 2====================================*/
-/* @media only screen and (max-width: 415px) and (max-height: 735px){
-  
-    .plan{
-        top:79% !important;
-    }
-
-} */
-/* ========================Pixel 2====================================*/
-/* @media only screen and (max-width: 735px) and (max-height: 415px){
-  
-    .plan{
-        
-        top: 213% !important;
-    }
-
-} */
-
-/* =======================iPahe X============================ */
+/* =======================iPone X============================ */
 @media only screen and (max-width: 815px) and (orientation: landscape){
 
     .name{
         font-size: 3em;
     }
-    .top img{
-        width: 99%;
-    }
-    .infButton{
-        margin-right: .2em;
-    }
-    .plan{
-        top: 216% !important;
-      
-    }
-    .plan img{
-        width: 80%;
-        height: 40%;
-    }
     .logo2{
 
         height: 8em;
     }
+    .floors img{
+        width: 80% !important;
+    }
+    .plan{
+        top: 140% !important;
+    }
 
 }
 
-/* =======================iPone X================================ */
-/* @media only screen and (max-width: 375px) and (max-height: 815px){
-    .plan{
-       
-        top: 76% !important;
-       
+
+/* ====================iPad============================ */
+@media only screen and (max-width: 800px){
+    .name{
+        font-size: 3em !important;
+     
     }
-} */
+    
+    .logo2{
+         
+       height: 8em;
+      }
+   
+     .plan{
+         width: 81%;
+         top: 40% !important;
+         left: 5%;
+       
+     }
+     .floors img{
+        width: 80% !important;
+        height: 40% !important;
+    }
+     .buttons{
+         font-size: 1.2em;
+     }
+     footer img{
+         width: 1.5em;
+     }
+     header{
+         padding-top: 1em;
+     }
+     footer{
+         font-size: 1.2em;
+     }
+}
+
 /* ============================================================ */
 @media only screen and (max-width: 800px) and (orientation: landscape){
 
     .name{
         font-size: 4em;
     }
-    .top img{
-        width: 99%;
-    }
-    .infButton{
-        margin-right: .2em;
-    }
+
     .plan{
-        top: 233% !important;
-      
-    }
-    .plan img{
-        width: 80%;
-        height: 40%;
-    }
-
-}
-
-/* =====================iPone 6/7/8 Plus============================== */
-/* @media only screen and (max-width: 740px) and (max-height: 415px){
-
-    .name{
-        font-size: 2.5em;
-     
-    }
-    .plan{
-        top: 211% !important;
-    }
-    .logo2{
-        height: 10em;
-         
+        top:125% !important;
+        left: 5%;
+        width: 81%;
     }
 }
-/* ========================iPone 6/7/8 Plus================================ */
-/* @media only screen and (max-width: 420px){
-    .plan{
-        
-        top: 79%;
-      
-    }
-} */
 
 /* ===================================================== */
 @media only screen and (max-width: 700px){
     .name{
-        font-size: 2.6em !important;
+        font-size: 3em !important;
      
     }
     .logo_text{
-        font-size: .7em;
+        font-size: 1em;
         margin: 3px;
-        line-height: 1.5em;;
-    }
-    
-    header{
-        height: 15%;
-        width: 99.96%;
-        padding: .7em  .7em 0 1em;
-    }
-    .buttons{
-        font-size: .9em;
+        line-height: 1em;;
     }
     .plan{
-        top: 78%;
-        left: 8.5%;
-        font-size: .7em;
-        padding: .5em .5em .5em 0;
+        top: 129% !important;
     }
-   .plan img{
-        width: 75%;
-    } 
+   
+    .buttons{
+        font-size: 1em;
+    }
+ 
     footer img{
         width: 2em;
     }
@@ -637,131 +580,63 @@ a{
     footer p,
     footer a{
          
-        font-size: 1em;
+        font-size: 1.5em;
     }
   
 } 
-/* =========================iPone 6/7/8=================================== */
-@media only screen and (max-width: 700px) and (orientation: landscape){
-   
-    .name{
-        font-size: 2.5em;
-    }
-    .plan{
-        top: 245% !important;
-        left: 9%;
-    }
-}
-/* =======================iPone 6/7/8================================ */
-/* @media only screen and (max-width: 380px) and (max-height: 670px){
-    .plan{
-       
-        top: 93% !important;
-        font-size: .5em;
-        
-      
-    }
- 
-} */
-/* ========================iPhone S5=============================== */
-@media only screen and (max-width: 360px) and (max-height: 640px){
- .name{
-     font-size: 1.3em !important;
- }
- .plan{
-     top:102% !important;
- }
 
-}
 /* ========================iPhone S5=============================== */
 @media only screen and (max-width: 640px) and (max-height:360px){
-    .name{
-        font-size: 2.2em !important;
-    }
+  
     .logo2{
         height: 8em;
     }
+    
     .plan{
-        top:248% !important;
+        top:143% !important;
     }
    
    }
 
-
-/* ====================iPhone 5/SE============================= */
-@media only screen and (max-width: 570px) and (orientation: landscape){
-   
-    .name{
-        font-size: 2.2em;
-    }
-    .plan{
-        top: 298% !important;
-        
-    }
-    .logo2{
-        height: 8em;
-    }
-}
-/* ========================iPhone 5/SE=============================== */
-@media only screen and (max-width: 320px) and (max-height:570px){
-
-    .name{
-        font-size: 1.2em;
-        margin-bottom: -1.7%;
-    }
-    .logo2{
-        height: 3.5em;
-    }
-   
-    .logo{
-        width: 4em;
-        height: 3em;
-    }
-    .logo_text{
-        font-size: .6em;
-    }
-    .imgHouses img{
-     
-        border-width: 5px ;
-    }
-    .buttons{
-        font-size: .5em;
-    }
-    .plan{
-        top: 118% !important;
-      
-    }
-    .plan img{
-        width: 80%;
-    } 
-} 
-/* ================================================= */
+   /* ================================================= */
  @media only screen and (max-width: 600px){
 
-    .name{
-        font-size: 2em !important;
-    }
     .logo{
         height: 30%;
     }
     .logo2{
         height: 6em;
     }
-    /* .imgHouses{
-        order: -1;
-    } */
+    
+}
+
+
+/* ====================iPhone 5/SE============================= */
+@media only screen and (max-width: 570px) and (orientation: landscape){
+   
+    .name{
+        font-size: 2.5em !important;
+    }
+  
+    .logo2{
+        height: 8em;
+    }
+    .plan{
+        top: 162% !important;
+        font-size: .8em;
+    }
+    footer{
+        line-height: 1.6em;
+    }
 }
 /* ================================================ */
 @media only screen and (max-width: 500px){
 
     .name{
-        font-size: 1.4em !important;
+        font-size: 1.8em !important;
         margin-bottom: -1.7%;
     }
-    /* .logo2{
-        height: 5em;
-    }
-    */
+   
     .logo{
         width: 5em;
         height: 4em;
@@ -789,26 +664,61 @@ a{
     .buttons{
         font-size: .6em;
     }
-    .plan{
-        top: 70%;
-      
-
-    }
-      .imgHouses img{
+    .imgHouses img{
      
-        border-width: 7px ;
+        border-width: 5px ;
     }
+    .plan{
+        top: 52.5% !important;
+        font-size: .7em;
+        width:81%
+    }
+    header::after{
+         height: 2px;
+         
+    }
+   
  
 }
 /* ========================================================= */
+@media only screen and (max-width: 420px){
+
+     header{
+        padding-top: 1em;
+    }
+    .plan{
+        top: 47% !important;
+        left: 5%;
+        
+    }
+    footer{
+        line-height: 1.3em;
+    }
+   
+}
+/* ========================================================= */
+@media only screen and (max-width: 415px){
+
+    
+    .plan{
+        top: 50% !important;
+        
+    }
+    footer img{
+        width: 1.3em;
+    }
+
+}
+/* ========================================================= */
 @media only screen and (max-width: 400px){
+   
     .name{
 
-        font-size:1.4em;
+        font-size: 1.7em !important;
     }
     .logo{
-        width: 4.5em;
-        height: 3em;
+        width: 3.5em;
+        height: 3.5em;
     }
     .logo2{
         height: 4em;
@@ -819,9 +729,71 @@ a{
     .width{
         width: 60%;
     }
+    .plan{
 
+        top:41% !important;
+        left: 5.5%;
+        font-size: .6em;
+    }
+   
+    .plan{
+        width: 80%;
+    }
+    
 
 }
+/* =============================================================== */
+@media only screen and (max-width: 380px){
+  
+    .plan{
+        top: 50% !important;
+    }
+    .logo_text{
+        font-size: .8em;
+        line-height: .8em;
+    }
+    footer{
+        font-size: .8em;
+        line-height: 1.7em;
+    }
+    footer img{
+        width: 1.3em;
+    }
+}
+
+/* ========================iPhone S5=============================== */
+@media only screen and (max-width: 360px) and (max-height: 640px){
+ 
+ .plan{
+     top: 54% !important;
+ }
+ .infButton{
+     widows: 11%;
+ }
+
+}
+
+/* ========================iPhone 5/SE=============================== */
+@media only screen and (max-width: 320px) and (max-height:570px){
+
+    .name{
+        font-size: 1.2em;
+      
+    }
+    .logo2{
+        height: 3.5em;
+    }
+   
+    .logo{
+        width: 4em;
+        height: 3em;
+    }
+    .plan{
+        top: 65.5% !important;
+    }
+   
+} 
+
 
 /* ======================================================= */
 @media only screen and (max-width: 320px){
@@ -829,9 +801,9 @@ a{
         font-size: 1.3em !important;
         margin-bottom: -1.7%;
     }
-    /* .imgHouses{
-        order: -1;
-    } */
+   .plan{
+       top: 57% !important;
+   }
     .logo2{
         height: 3em;
     }
@@ -841,7 +813,10 @@ a{
         height: 3em;
     }
     .logo_text{
-        font-size: .6em;
+        font-size: .65em;
+    }
+    .logo_text p:last-of-type {
+        margin-top: .6em;
     }
     .imgHouses img{
      
@@ -850,28 +825,12 @@ a{
     .buttons{
         font-size: .5em;
     }
-    .plan{
-        top: 118% !important;
-      
-    }
-    .plan img{
-        width: 80%;
-    } 
+
     .top img{
         width: 99%;
     }
 }
 
-   
-/* ====================================================
-@media only screen and (max-height: 850px){
-    .plan{
-        top: 70.5%;
-        left: 9%;
-      
-    }
-} */
-/* ======================================================= */
 
  
 
