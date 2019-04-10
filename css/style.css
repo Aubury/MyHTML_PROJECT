@@ -263,6 +263,9 @@ a{
     color: black;
     font-size: 2em;
 }
+footer img{
+    margin-top: .6em;
+}
 
 /* ============================================================= */
 @media only screen and (max-width: 1500px){
@@ -347,6 +350,7 @@ a{
     }
     footer img{
         width: 2em;
+        height: 2em;
     }
     .plan{
         
@@ -579,9 +583,9 @@ a{
         font-size: 1em;
     }
  
-    footer img{
+    /* footer img{
         width: 2em;
-    }
+    } */
     footer{
         
         height: 10em;
@@ -676,7 +680,7 @@ a{
     footer img{
 
         height: 1.5em;
-        width: auto;
+        width: 1.5em;
     }
     header a{
         font-size: 1.5em;
@@ -691,7 +695,7 @@ a{
 @media only screen and (max-width: 500px){
 
     .name{
-        font-size: 1.8em !important;
+        font-size: 2em !important;
         margin-bottom: -1.7%;
     }
    
@@ -739,7 +743,15 @@ a{
  
 }
 /* ========================================================= */
+@media only screen and (max-width: 450px){
+
+     .name{
+        font-size: 1.8em !important;
+    }
+}
+/* ========================================================= */
 @media only screen and (max-width: 420px){
+   
 
      header{
         padding-top: 1em;
@@ -812,6 +824,10 @@ a{
 /* =============================================================== */
 @media only screen and (max-width: 380px){
   
+    .name{
+
+        font-size: 1.5em !important;
+    }
     .plan{
         top: 50% !important;
     }
@@ -824,7 +840,9 @@ a{
         line-height: 1.7em;
     }
     footer img{
-        width: 1.3em;
+        width: 1.4em;
+        height: 1.4em;
+       
     }
 }
 
@@ -905,6 +923,17 @@ a{
         width: 99%;
     }
 }
+/* =================================================== */
+@media only screen and (max-width: 300px){
+
+    .name{
+
+        font-size: 1.2em !important;
+
+    }
+
+}
+
 
 
  
