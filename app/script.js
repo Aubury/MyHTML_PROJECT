@@ -2,7 +2,7 @@ let body = document.querySelector("body");
 
 document.querySelector('.infButton').addEventListener('click',function(){
 
-    let plan = document.getElementById('1').childNodes[2];
+    let plan = document.getElementsByClassName('top').childNodes[2];
     
     if(plan.style.display == 'none'){
        
@@ -16,3 +16,7 @@ document.querySelector('.infButton').addEventListener('click',function(){
  
 });
 
+document.querySelector('.topButton').addEventListener('click',function(){
+
+
+});
