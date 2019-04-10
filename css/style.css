@@ -197,11 +197,12 @@ main{
     padding-top: .2em;
     
 }
-.topButton:hover,
+/* .topButton:hover,
 .downButton:hover, 
 .infButton:hover{
     cursor: pointer;
-}
+} */
+
 .verticalText{
   writing-mode: vertical-lr;
    margin-top: 11em;
@@ -520,12 +521,19 @@ footer img{
         font-size: 3em !important;
      
     }
-    
+    .logo{
+        width: 5em;
+        height: 5em;
+    }
     .logo2{
          
        height: 8em;
       }
-   
+      .logo_text{
+        font-size: 1em;
+        margin: 3px;
+        line-height: 1em;;
+    }
      .plan{
          width: 81%;
          top: 40% !important;
@@ -570,11 +578,11 @@ footer img{
         font-size: 3em !important;
      
     }
-    .logo_text{
+    /* .logo_text{
         font-size: 1em;
         margin: 3px;
         line-height: 1em;;
-    }
+    } */
     .plan{
         top: 129% !important;
     }
@@ -628,9 +636,9 @@ footer img{
     .name{
         font-size: 2.5em !important;
     }
-    .logo{
+    /* .logo{
         height: 30%;
-    }
+    } */
     .logo2{
         height: 6em;
     }
