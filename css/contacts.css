@@ -34,24 +34,24 @@ iframe{
 	box-shadow: 0 0 3px #666;
 }
 
-h2, .field-block {
+h2, .field_block {
 	margin-bottom: 20px;
 }
 h2{
     font-weight: 600;
 }
 
-.field-block label, .field-block .field {
+.field_block label, .field_block .field {
 	display: block;
 	width: 100%;
 }
 
-.field-block label {
+.field_block label {
 	margin-bottom: 8px;
 
 }
 
-.field-block .field {
+.field_block .field {
 	font-size: 16px;
 	padding: 8px 12px;
 	line-height: 1.5;
@@ -61,13 +61,13 @@ h2{
 	
 }
 
-.field-block .field:focus {
+.field_block .field:focus {
   border-color: #66afe9;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
-.field-block textarea {
+.field_block textarea {
 	resize: vertical;
 }
 
