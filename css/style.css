@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    outline:none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
 }
 body{
     background-color: #dad7e3;
