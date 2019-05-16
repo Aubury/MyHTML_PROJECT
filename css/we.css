@@ -43,7 +43,7 @@ main img{
     }
     .img img{
         width: 90%;
-        height: 25%;
+        height: auto;
         margin: .1em auto;
     }
    
