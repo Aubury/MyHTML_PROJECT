@@ -15,7 +15,7 @@ main img{
 
 .img img{
         width: 33%;
-        height: 25%;
+        height: 10em;
     }
    
 /* =============================================== */
@@ -32,6 +32,14 @@ main img{
     
    
 }
+/* ===================================================== */
+@media only screen and (max-width: 1000px){
+
+    .img img{
+      height: 8em;
+
+}
+}
 /* ==================================================== */
 @media only screen and (max-width: 600px){
 
@@ -43,8 +51,25 @@ main img{
     }
     .img img{
         width: 90%;
+        height: 15em;
         margin: .1em auto;
     }
-   
+}
+/* ====================================================== */
+@media only screen and (max-width: 450px){
+ 
+    .img img{
+        height: 13em;
+        
+    }
+
+}
+/* ====================================================== */
+@media only screen and (max-width: 400px){
+ 
+    .img img{
+        height: 10em;
+        
+    }
 
 }
