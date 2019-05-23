@@ -309,14 +309,7 @@ footer{
      .logo_text{
         font-size: 1.2em;
     }
-    /* .imgHouses{
-  
-       height:  70em !important;
-     
-     }
-     .gallery{
-         height: 60em;
-     } */
+
     .planHouses{
         font-size: 1.8em;
     }
@@ -692,7 +685,7 @@ footer{
          
         font-size: 1.5em;
     }
-  
+    
 } 
 
 /* =============================================================== */
@@ -736,7 +729,13 @@ footer{
         height: auto;
          line-height: 1.3em;
     }
+    .gallery{
+        height: 65em;
 
+    }
+    .imgHouses {
+        height: 80em !important;
+    }
     
 }
 
